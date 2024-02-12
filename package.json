@@ -1,0 +1,12 @@
+{
+  "name": "kino-fromstart",
+  "version": "1.0.0",
+  "description": "Starting the movie project Kino from scratch!",
+  "main": "main.js",
+  "scripts": {
+    "sass:watch": "sass --no-source-map --watch src/main.scss main.css",
+    "sass:compile": "sass --no-source-map src/main.scss main.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
