@@ -1,0 +1,25 @@
+main {
+  min-height: 100vh;
+}
+
+.aboutUs {
+  display: flex;
+  margin-left: 10rem;
+  flex-direction: column;
+  width: 40rem;
+
+  &__info {
+    margin-bottom: 3rem;
+  }
+}
+
+h1 {
+  color:white;
+  margin-top: 4rem;
+  font-size: 2rem;
+}
+
+p {
+  color: white;
+  margin-top: 1rem;
+}

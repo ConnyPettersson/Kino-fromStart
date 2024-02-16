@@ -45,6 +45,18 @@ body {
   height: 20px;
 }
 
+.viewTop3 {
+  display: flex;
+  justify-content: center;
+}
+.viewTop3__container {
+  display: flex;
+  flex-direction: row;
+}
+.viewTop3__title {
+  color: white;
+}
+
 .footer {
   display: flex;
   background-color: grey;
@@ -58,4 +70,29 @@ body {
 }
 .footer__a {
   text-decoration: none;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.aboutUs {
+  display: flex;
+  margin-left: 10rem;
+  flex-direction: column;
+  width: 40rem;
+}
+.aboutUs__info {
+  margin-bottom: 3rem;
+}
+
+h1 {
+  color: white;
+  margin-top: 4rem;
+  font-size: 2rem;
+}
+
+p {
+  color: white;
+  margin-top: 1rem;
 }

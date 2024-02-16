@@ -7,13 +7,18 @@
   <title>Page Title</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
   <script src="https://kit.fontawesome.com/4c51990d8f.js"></script>
 
 </head>
 
 <body>
   <header class="header">
-    <img class="header__logo" src="images/bihjografenlogo.png" alt="logo">
+    <a class="header__logo__a" href="index.html"> 
+      <img class="header__logo" src="images/bihjografenlogo.png" alt="logo">
+    </a>
+    
     <nav class="header__nav">
       <ul class="header__ul">
         <li class="header__li">
@@ -37,7 +42,31 @@
     <section class="viewTop3" >
       <h1 class="viewTop3__title" >TOPP 3</h1>
       <div class="viewTop3__container"></div>
-      <button class="viewTop3__btn">Se alla filmer</button>
+      <button class="viewTop3__btn">
+        <a href="pages/movies.html">Se alla filmer</a>
+      </button>
+    </section>
+    <section class="viewCurrent">
+      <h1 class="viewCurrent__title">AKTUELLA</h1>
+      <div class="viewCurrent__carousel">
+        <button class="viewCurrent__carouselPrev"><i class="fas fa-arrow-left"></i></button>
+        <div class="viewCurrent__container"></div>
+        <button class="viewCurrent__carouselNext"><i class="fas fa-arrow-right"></i></button>
+      </div>
+      <button class="viewCurrent__btn">
+        <a href="pages/movies.html">Se alla filmer</a>
+      </button>
+    </section>
+
+    <!-- Coming movies section should be the last section! -->
+
+    <section class="comingMovies">
+      <h1 class="commingMovies__title">Kommande filmer</h1>
+      <div class="comingMovies__Container"></div>
+      <!--coming movies is created in coming__movies__Container. -->
+      <button class="viewCurrent__btn">
+        <a href="pages/movies.html">Se alla filmer</a>
+      </button>
     </section>
   </main>
   <footer class="footer">
@@ -49,8 +78,21 @@
       <a class="footer__a" href="#instagram">Instagram</a>
     </div>
   </footer>
+  <template class="movieTemplate">
+    <div class="movieTemplate__card">
+      <div class="movieTemplate__cover"></div>
+      <div class="movieTemplate__img"></div>
+      <h2 class="movieTemplate__title"></h2>
+      <p class="movieTemplate__ageLimit"></p>
+      <p class="movieTemplate__category"></p>
+      <p class="movieTemplate__description"></p>
+      <button class="movieTemplate__button" type="button">
+        Boka biljett
+      </button>
+    </div>
+  </template>
 
-  <script src='main.js'></script>
+  <script src='main.js' type="module"></script>
 </body>
 
 </html>
